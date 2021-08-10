@@ -1,0 +1,44 @@
+@media (max-width: 1330px){
+    .wrapper__companies-cards{
+        justify-content: center;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 1200px){
+    .footer-container{
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 1024px){
+    .wrapper__full-time-cards {
+        padding: 0;
+    }
+}
+
+@media (max-width:768px){
+    .wrapper__companies-cards{
+        margin-bottom: 0;
+    }
+
+    .my-titles{
+        font-size: 25px;
+        line-height: 34px;
+    }
+
+    .full-time-card__title {
+        font-size: 16px;
+        line-height: 40px;
+    }    
+
+    .full-time-card__span {
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+    .header-top__link {
+        font-size: 13px;
+    }
+}

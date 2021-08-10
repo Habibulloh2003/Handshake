@@ -1,0 +1,522 @@
+@import 'fonts.css';
+
+:root{
+    --navbar: #0F1035;
+    --white: #FFFFFF;
+    --black: #000000;
+    --light-blue: #D3F1F3;
+    --blue-btn: #190083;
+    --company-bg: #F6F6F8;
+    --vertual-bg: #F3E02B;
+    --jobSearch-bg: #EBEEF3;
+    --nextJob-bg: #0F1035;
+    --footer-bg: #F6F6F8;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto';
+}
+
+ul{
+    list-style: none;
+    margin-bottom: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.navbar__fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--navbar);
+    padding: 4px 0;
+    z-index: 999;
+}
+
+.navbar__list{
+    margin: 0 !important;
+    padding: 15px 0;
+}
+
+.navbar__items{
+    margin-right: 20px;
+}
+
+.navbar__link{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--white);
+}
+
+.navbar__span{
+    height: max-content;
+}
+
+.header{
+    margin-top: 57px;
+}
+
+.header-top{
+    background: var(--white);
+    padding: 12px 0;
+}
+
+.header-top__logo{
+    height: max-content;
+}
+
+.header-top__list{
+    padding: 15px 130px 15px 30px;
+    column-gap: 30px;
+}
+
+.header-top__link{
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--black);
+}
+
+.header-top__bottom-items{
+    padding: 21px 0;
+    background: var(--light-blue);
+}
+
+.header-top__bottom-list{
+    padding-left: 0;
+}
+
+.header-top__bottom-txt{
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--black);
+}
+
+.header-bottom{
+    background: url(../images/header-bottom-img.png) no-repeat center/cover;
+    height: 584px;
+    padding: 41px 0;
+}
+
+.header-bottom__container{
+    height: 100%;
+}
+
+.header-bottom__title{
+    font-size: 40px;
+    line-height: 48px;
+    color: var(--black);
+    width: 488px;
+    text-align: center;
+}
+
+.header-bottom__spam{
+    color: var(--black);
+    font-size: 27px;
+    line-height: 40px;
+    margin-top: 12px;
+}
+
+.header-bottom__form{
+    width: 480px;
+    height: 46px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-bottom__input{
+    width: 340px;
+    background: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    border-radius: 3px;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.2);
+    padding-left: 22px;
+}
+
+.header-bottom__button{
+    background: var(--blue-btn);
+    color: var(--white);
+    border: 2px solid var(--blue-btn);
+    border-radius: 3px;
+    width: 108px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    transition: 0.5s linear;
+}
+
+.header-bottom__button:hover{
+    background: var(--white);
+    color: var(--black);
+}
+
+.full-time{
+    margin: 110px 0;
+}
+
+.my-titles{
+    color: var(--black);
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+}
+
+.full-time__title{
+    width: 422px;
+}
+
+.full-time__span{
+    font-size: 22px;
+    line-height: 32px;
+    text-align: center;
+    color: var(--black);
+    margin: 53px 0 81px 0;
+}
+
+.wrapper__full-time-cards{
+    width: 100%;
+    padding: 0 95px;
+}
+
+.full-time-card__title{
+    font-size: 22px;
+    line-height: 24px;
+    color: var(--black);
+}
+
+.full-time-card__span{
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--black);
+    text-align: center;
+}
+
+.blue-btn{
+    border: 2px solid var(--blue-btn);
+    padding: 16px 24px;
+    margin-top: 78px;
+    background: var(--blue-btn);
+    color: var(--white);
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    border-radius: 3px;
+    transition: 0.5s linear;
+    box-shadow: 2px 4px 4px 0 var(--black);
+}
+
+.blue-btn:hover{
+    background: var(--white);
+    color: var(--black);
+    box-shadow: none;
+}
+
+.experience{
+    height: 904px;
+    background: url(../images/experience.png) no-repeat center/cover;
+}
+
+.experience-title{
+    margin-top: 111px;
+    margin-bottom: 279px;
+}
+
+.carousel-inner{
+    margin-left: auto;
+    max-width: 1250px;
+    
+}
+
+.experience__card{
+    background: var(--white);
+    padding: 67px 0 60px 70px;
+}
+
+.experience__card img{
+    width: 100px;
+    height: 100px;
+    align-self: center;
+    margin-right: 50px;
+}
+
+.experience__card-title{
+    font-size: 21px;
+    line-height: 42px;
+    color: var(--black);
+}
+
+.experience__card-item{
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--black);
+}
+
+.experience__card-spam{
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--black);
+}
+
+.carusel-btns{
+    bottom: -100px;
+}
+
+.carusel-btn{
+    width: 15px;
+    height: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 3px solid #FFFFFF !important;
+    border-radius: 50%;
+}
+
+.carusel-btn+.active,
+.active{
+    background: #FFFFFF !important;
+}
+
+.companies{
+    background: var(--company-bg);
+}
+
+.companies__title{
+    margin-top: 106px;
+    margin-bottom: 40px;
+}
+
+.companies__span{
+    font-size: 22px;
+    line-height: 32px;
+    color: var(--black);
+}
+
+.wrapper__companies-cards{
+    margin-top: 100px;
+    margin-bottom: 120px;
+    justify-content: space-between;
+}
+
+.companies-cards{
+    position: relative;
+    height: 190px;
+    width: 190px;
+    background: var(--white);
+}
+
+.companies-cards__title{
+    position: absolute;
+    top: 2px;
+    left: 95px;
+    width: 80px;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: var(--black);
+}
+
+.companies-cards img{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.companies-cards__span{
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 22px;
+}
+
+.companies a{
+    margin-bottom: 111px;
+}
+
+.virtual{
+    padding: 111px 0;
+    background: var(--vertual-bg);
+}
+
+.virtual__span{
+    font-size: 22px;
+    line-height: 32px;
+    color: var(--black);
+    margin-top: 41px;
+}
+
+.students{
+    padding: 110px 0;
+}
+
+.students__title{
+    margin-bottom: 100px;
+}
+
+.wrapper__students-items{
+    height: 634px;
+    padding: 80px 0 80px 80px;
+    background: url(../images/students.png) no-repeat center/cover;
+}
+
+.students-items{
+    width: max-content;
+    background: var(--white);
+    padding: 70px;
+}
+
+.students-items__title{
+    font-size: 22px;
+    line-height: 32px;
+    color: var(--black);
+    margin-bottom: 59px;
+}
+
+.jobSearch{
+    position: relative;
+    padding-top: 59px;
+    padding-bottom: 188px;
+    background: var(--jobSearch-bg);
+    overflow: hidden;
+}
+
+.jobSearch__span{
+    font-size: 22px;
+    line-height: 32px;
+    color: var(--black);
+    margin-top: 35px;
+    margin-bottom: 146px;
+}
+
+.wrapper__jobSearch-links{
+    z-index: 2;
+    column-gap: 42px;
+}
+
+.jobSearch-img{
+    position: absolute;
+    top: 344px;
+    right: 0;
+}
+
+.nextJob{
+    padding-top: 97px;
+    padding-bottom: 110px;
+    background: var(--nextJob-bg);
+}
+
+.nextJob__title{
+    color: var(--white);
+}
+
+.nextJob__span{
+    font-size: 22px;
+    line-height: 32px;
+    color: var(--white);
+    margin: 40px 0;
+}
+
+.nextJob__button{
+    background: #FF1100;
+}
+
+.nextJob__button:hover{
+    border: 2px solid #FF1100;
+    background: var(--white);
+    color: var(--black);
+}
+
+.footer{
+    background: var(--footer-bg);
+    padding: 80px 0 16px 0;
+}
+
+.footer-container{
+    padding: 0 106px;
+}
+
+.wrapper__footer-logos{
+    margin-right: 156px;
+}
+
+.footer__logo{
+    margin-bottom: 43px;
+}
+
+.inner__footer-logos{
+    display: flex;
+    column-gap: 8px;
+}
+
+.wrapper__footer-lists{
+    width: 100%;
+}
+
+.footer-list__title{
+    font-size: 16px;
+    line-height: 21px;
+    color: var(--black);
+    margin-bottom: 37px;
+}
+
+.footer-list{
+    padding: 5px 20px 5px 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.footer-list__link{
+    font-size: 13px;
+    line-height: 18px;
+    color: var(--black);
+}
+
+.footer-list__link:hover{
+    color: rgba(53, 49, 49, 0.904);
+}
+
+.footer-bottom{
+    position: relative;
+    width: 100%;
+    padding-top: 19px;
+    margin-top: 88px;
+}
+
+.footer-bottom__list{
+    display: flex;
+    column-gap: 22px;
+    padding-left: 0;
+}
+
+.footer-bottom__item{
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--black);
+}
+
+.footer-bottom__list2{
+    display: flex;
+    column-gap: 16px;
+    padding-left: 0;
+}
+
+.footer-bottom::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #000;
+}
